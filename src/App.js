@@ -17,12 +17,12 @@ function App() {
       element: <Main></Main>,
       children: [
         {
-          path: '/',
+          path: '/shop',
           loader: () => fetch('products.json'),
           element: <Shop></Shop>
         },
         {
-          path:'orders',
+          path:'/orders',
           loader: productsAndCartLoader,
           element: <Orders></Orders>
         },
